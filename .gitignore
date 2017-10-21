@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+*.iml
+target
+.idea/dataSources/98177325-d878-4bf4-a1e0-30ea660e7cfa.xml
+.idea/inspectionProfiles/
+src/test/
+target/ee-test/META-INF/
+target/generated-sources/
