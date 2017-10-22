@@ -3,6 +3,7 @@ package test.java.ee.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import test.java.ee.entity.Book;
 import test.java.ee.services.BookService;
 
 import javax.ejb.EJB;
@@ -16,7 +17,8 @@ public class TestController {
 
     @GetMapping
     public void index(){
-        bookService.createBook();
+        Book book = bookService.createBook();
+        System.out.println("Controller executed");
     }
 
 }

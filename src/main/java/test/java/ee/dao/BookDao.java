@@ -15,6 +15,7 @@ public class BookDao {
 
     public void insertBook(Book book){
         em.persist(book);
+        System.out.println("Dao executed");
     }
 
     public Book getBookById(Long id){

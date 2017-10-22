@@ -21,11 +21,13 @@ public class BookService {
         this.bookDao = bookDao;
     }
 
-    public void createBook(){
+    public Book createBook(){
         Book book = new Book();
         book.setAuthor("asasd");
         book.setName("sdsdf");
         bookDao.insertBook(book);
+        System.out.println("Service executed");
+        return book;
     }
 
 }
